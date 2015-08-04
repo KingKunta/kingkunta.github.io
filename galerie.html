@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" lang="fr" content="Calapez Antonio">
+	<meta name="description" content="Un site vitrine sur les pandas">
+	<meta name="keywords" content="panda, pandas, padna, pandas roux, pandas géants">
+	<link rel=icon href=favicon.jpg sizes="16x16" type="image/png">
+	<title>Les pandas</title>
+	<!--[if lte IE 8]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script>
+	document.createElement('header');
+	document.createElement('nav');
+	document.createElement('article');
+	document.createElement('section');
+	document.createElement('footer');
+	</script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="nav-wrapper">
+		<div class="container">
+			<div class="nav-icon"></div>
+			<div class="nav-title">
+				<ul>
+					<li><a href="index.html" class="nav-links">Accueil</a></li>
+					<li><a href="galerie.html" class="nav-links current">Galerie</a></li>
+					<li><a href="contact.html" class="nav-links">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="banner-section-galerie">
+	</div>
+	<div class="main-section">
+		<div class="container">
+			<h2 class="green center">Quelques photos de pandas</h2>
+			<div class="galerie-wrapper" style="height: 500px;">
+			  <span class="hidden-target" id="target-photo-1"></span>
+			  <span class="hidden-target" id="target-photo-2"></span>
+			  <span class="hidden-target" id="target-photo-3"></span>
+			  <div class="galerie-photo photo-1 light" style="background: url(pics/famille_panda.jpg) 50% 50% / cover;">
+			    <h2>Une famille de pandas</h2>
+			    <a class="arrow arrow-prev" href="#target-photo-3"></a>
+			    <a class="arrow arrow-next" href="#target-photo-2"></a>
+			  </div>
+			  <div class="galerie-photo photo-2 light" style="background: url(pics/pandas-flute.jpg) 50% 50% / cover;">
+			    <h2>Pandas jouant de la flûte</h2>
+			    <p>Les pandas communiqueraient-ils en jouant de la flûte? Blague à part, photo de pandas mangeant du bambou.</p>
+			    <a class="arrow arrow-prev" href="#target-photo-1"></a>
+			    <a class="arrow arrow-next" href="#target-photo-3"></a>
+			  </div>
+			  <div class="galerie-photo photo-3 light" style="background: url(pics/pandas-roux-neige.jpg) 50% 50% / cover;">
+			    <h2>Des pandas roux</h2>
+			    <p>Photo de pandas roux jouant dans la neige</p>
+			    <a class="arrow arrow-prev" href="#target-photo-2"></a>
+			    <a class="arrow arrow-next" href="#target-photo-1"></a>
+			  </div>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer-border">
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-name">
+				<p>© Antonio Calapez</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

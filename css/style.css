@@ -1,0 +1,501 @@
+/**
+CSS Reset
+**/
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2{
+	text-decoration: none;
+}
+
+*{
+	font-family: sans-serif;
+}
+
+/**
+Custom grid system
+**/
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	max-width: 1000px;
+}
+
+.row:before, .row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='col-']{
+	float: left;
+	min-height: 1px;
+	width: 16.6%;
+}
+
+.col-1{
+	width: 16.6%;
+}
+
+.col-2{
+	width: 33.3%;
+}
+   
+.col-3{
+	width: 50%; 
+}
+    
+.col-4{
+	width: 66.664%;
+}
+
+.col-5{
+	width: 83.33%;
+}
+
+.col-6{
+	width: 100%;
+}
+
+/**
+Nav
+**/
+.nav-wrapper{
+	width: 100%;
+	height: 50px;
+	background-color: #424242;
+	color: #fff;
+	position: fixed;
+}
+
+.nav-icon{
+	z-index: 100;
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+  background-color:transparent;
+	background: url("../pics/panda.jpg") no-repeat;
+	background-position: center, center;
+	background-size: 80px 80px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	display: inline-block;
+	overflow: hidden;
+}
+
+.nav-icon-contact {
+  z-index: 100;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  background: url("../pics/antonio.jpg") no-repeat;
+  background-position: center, center;
+  background-size: 80px 80px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  overflow: hidden; }
+
+
+.nav-title{
+	position: absolute;
+	margin-left: 80px;
+	margin-top: -80px;
+	color: #FFF;
+	font-size: 14;
+}
+.nav-links{
+	color:white;
+	font-size:14;
+	text-decoration: none;
+}
+.nav-links:hover{
+	color:#8fb59c;
+}
+.current{
+	border-bottom:solid 1px;
+  color:#8fb59c;
+}
+
+ul li{
+	list-style: none;
+}
+
+li{
+	float: left;
+	color: #FFF;
+	font-size: 14;
+	text-decoration: none;
+	display: inline-block;
+	width:100px;
+}
+
+/**
+Header pics
+**/
+[class^='banner-section']{
+  z-index: 0;
+  margin-top: 0px;
+  height: 500px;
+  width: 100%;
+}
+
+.banner-section{
+	background: url('../pics/pandas.jpg') no-repeat;
+	background-position: center, center;
+	background-size: cover;
+}
+
+.banner-section-contact{
+  background: url('../pics/cover-contact.jpeg') no-repeat;
+  background-position: center, center;
+  background-size: cover;
+}
+
+.banner-section-galerie{
+  background: url('../pics/pandas-2.jpg') no-repeat;
+  background-position: center, center;
+  background-size: cover;
+}
+
+.green{
+  color: #8fb59c;
+}
+
+.center{
+  text-align: center;
+}
+
+.div-intro>img{
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.panda-pic{
+	width: 49%;
+	margin-right: auto;
+	margin-left: auto;
+	display: inline-block;
+	text-align: center;
+}
+
+.panda-pic>img{
+  background: #FFF;
+  box-shadow: 0 0 1px rgba(0,0,0,0.4),0 2px 2px rgba(0,0,0,0.05);
+  padding: 4px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.footer{
+	width: 100%;
+	height: 50px;
+	background-color: #424242;
+	color: #fff;
+	border-top: 10px solid #9E9E9E;
+}
+
+.footer-name{
+	padding-top: 5px;
+}
+
+/**
+Formulaire contact
+**/
+
+.contact{
+  color:#8fb59c;
+  text-align: center;
+}
+
+.inputs {
+  color: #212121;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+.inputs:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #8fb59c;
+  color: #212121;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.input-nom {
+  background-image: url(../pics/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; 
+}
+
+.input-nom:focus {
+  background-image: url(../pics/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; 
+}
+
+.input-mail {
+  background-image: url(../pics/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; 
+}
+
+.input-mail:focus {
+  background-image: url(../pics/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; 
+}
+
+.input-message {
+  background-image: url(../pics/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; 
+}
+
+.input-message:focus {
+  background-image: url(../pics/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; 
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical; 
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+  background-color: white; 
+}
+
+.bouton-envoyer {
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #424242;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 15px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700; 
+}
+
+.bouton-envoyer:hover {
+  background-color: #fbfbfb;
+  color: #212121;
+}
+
+.submit:hover {
+  color: #8fb59c; 
+}
+
+.fondu {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease; 
+}
+
+.submit:hover .fondu {
+  width: 100%;
+  background-color: white; 
+}
+/**
+Galerie
+**/
+
+.galerie-wrapper {
+    position: relative;
+    margin-bottom: 15px
+}
+.galerie-wrapper .galerie-photo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out
+}
+
+.light{
+  color: white;
+}
+
+.galerie-wrapper .galerie-photo .arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background: url("../pics/galerie-arrow.png") 50% 50%/20px no-repeat
+}
+.galerie-wrapper .galerie-photo .arrow.arrow-prev {
+    left: 0
+}
+.galerie-wrapper .galerie-photo .arrow.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+
+.galerie-wrapper[id^="target-photo"] {
+    display: none
+}
+.galerie-wrapper .photo-1 {
+    z-index: 2;
+    opacity: 1
+}
+.galerie-wrapper *:target ~ .photo-1 {
+    opacity: 0
+}
+.galerie-wrapper #target-photo-1:target ~ .photo-1 {
+    opacity: 1
+}
+.galerie-wrapper #target-photo-2:target ~ .photo-2,
+.galerie-wrapper #target-photo-3:target ~ .photo-3 {
+    z-index: 3;
+    opacity: 1
+}
+
+
+/**
+IE 8 h4xe
+**/
+@media \0screen {
+  /**
+  General fixes
+  **/
+  .nav-icon{
+    background-color: transparent;
+    background: none;
+  }
+  
+  .nav-icon-contact{
+    background-color: transparent;
+    background: none;
+  }
+
+  /**
+  Contact form fixes
+  **/
+  .name:before{
+    content: "Nom: ";
+  }
+  .email:before{
+    content: "Email: ";
+  }
+  .text:before{
+    content: "Votre message: ";
+  }
+
+  .form-section:before{
+    content: url(../pics/antonio.jpg);
+  }
+
+  .banner-section-contact{
+    height: 0;
+  }
+  
+  /*
+  Galerie wrapper fixes
+  **/
+  .galerie-wrapper {
+      position: relative;
+      margin-bottom: 15px
+  }
+  .galerie-wrapper .galerie-photo {
+      position: relative;
+  }
+
+  .light{
+    color: black;
+  }
+
+  .galerie-wrapper .galerie-photo .arrow {
+      position: relative;
+      top: 0;
+      display: block;
+  }
+  .galerie-wrapper .galerie-photo .arrow.arrow-prev {
+      position: relative;
+      left: 0
+  }
+  .galerie-wrapper .galerie-photo .arrow.arrow-next {
+    position: relative;
+    left: 0;
+  }
+  .galerie-wrapper .photo-1 {
+      z-index: 2;
+      opacity: 1
+  }
+  .galerie-wrapper *:target ~ .photo-1 {
+      opacity: 1;
+  }
+  .galerie-wrapper #target-photo-1:target ~ .photo-1 {
+      opacity: 1
+  }
+  .galerie-wrapper #target-photo-2:target ~ .photo-2,
+  .galerie-wrapper #target-photo-3:target ~ .photo-3 {
+      z-index: 3;
+      opacity: 1;
+  }
+
+  .photo-1:after{
+    content: url(../pics/famille_panda.jpg);
+  }
+
+  .photo-2:after{
+    content: url(../pics/pandas-flute.jpg);
+  }
+
+  .photo-3:after{
+    content: url(../pics/pandas-roux-neige.jpg);
+  }
+}
